@@ -2,6 +2,11 @@
 
 Eine einfache Webanwendung zum Finden von Supermärkten in der Nähe einer angegebenen Adresse. Die Anwendung besteht aus einem Java Spring Boot Backend und einem HTML/CSS/JavaScript Frontend.
 
+## Voraussetzungen
+- Java 17 oder neuer
+- Maven 3
+- Eine Internetverbindung, da Abhängigkeiten und OpenStreetMap-Daten zur Laufzeit aus dem Netz geladen werden
+
 ## Backend starten
 ```bash
 cd backend
