@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supermarktsfinder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2uuRjIYpKbH0p62A6pU7G1xNhxKHUL6vReYhC2E=" crossorigin=""/>
+</head>
+<body>
+  <header>
+    <h1>Supermarkt Finder</h1>
+  </header>
+  <section class="search-box">
+    <form id="searchForm">
+      <input type="text" id="address" placeholder="Adresse" required />
+      <input type="text" id="city" placeholder="Stadt" required />
+      <input type="number" id="radius" placeholder="Umkreis (m)" value="1000" min="100" />
+      <button type="submit">Suchen</button>
+    </form>
+  </section>
+  <section id="map"></section>
+  <section id="results"></section>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j8Mk7V+Aa+uzMtHAfSfF3zgWYVdZ0f9BxSL+6lY=" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
